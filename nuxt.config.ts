@@ -4,9 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content'],
   ssr: false,
-  nitro: {
-    prerender: {
-      routes: ['/', '/admin'], // Exclude `/admin/`
-    },
-  }
+  // nitro: {
+  //   prerender: {
+  //     routes: ['/', '/admin'], // Exclude `/admin/`
+  //   },
+  // }
 })
