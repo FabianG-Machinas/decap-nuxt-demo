@@ -2,5 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/content']
+  modules: ['@nuxt/content'],
+  ssr: false,
+  nitro: {
+    prerender: {
+      routes: ['/', '/admin'], // Exclude `/admin/`
+    },
+  }
 })
